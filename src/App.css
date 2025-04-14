@@ -73,12 +73,13 @@ nav {
 }
 
 /* Hero Section com Parallax */
+/* Originalmente, usamos background-attachment: fixed, porém em dispositivos móveis (iOS) isso pode prejudicar a responsividade */
 .hero-section {
   position: relative;
   height: 100vh;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed; /* Efeito parallax */
+  background-attachment: fixed; /* Efeito parallax na versão desktop */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,7 +190,7 @@ nav {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  transition: transform 0.3s ease; /* Efeito de zoom */
+  transition: transform 0.3s ease;
 }
 
 .card-atuacao:hover img {
@@ -244,7 +245,7 @@ nav {
   margin-bottom: 1rem;
   line-height: 1.6;
   color: #555;
-  text-align: justify; /* Texto justificado para melhor leitura */
+  text-align: justify;
 }
 
 /* Botão Instagram */
@@ -449,7 +450,7 @@ nav {
 }
 
 /* Responsividade adicional */
-/* Para telas médias: ajusta a navbar para coluna */
+/* Para telas menores (até 768px) */
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
@@ -465,6 +466,11 @@ nav {
   }
   .logo {
     margin-bottom: 0.5rem;
+  }
+
+  /* Altera o comportamento da seção Hero para dispositivos móveis */
+  .hero-section {
+    background-attachment: scroll; /* remove o efeito fixed que pode prejudicar a responsividade */
   }
 }
 
@@ -486,8 +492,8 @@ nav {
   .nav-links {
     width: 100%;
     display: flex;
-    flex-direction: row; /* Mantém os links em linha */
-    justify-content: space-around; /* Distribui uniformemente os links */
+    flex-direction: row;
+    justify-content: space-around;
     text-align: center;
   }
 }
