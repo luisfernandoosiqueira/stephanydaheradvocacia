@@ -1,26 +1,25 @@
 import React, { useState } from "react";
 import "./App.css";
 
-// Importações das imagens
+// Importações de imagens para a aplicação
 import iconeWhatsapp from "./images/icone-whatsapp.png";
 import iconeInstagram from "./images/icone-instagram.png";
 import imagemLocalizacao from "./images/imagem-localizacao.png";
 
-import StephanyHero from "./images/home2.png";       // Fundo do Hero
-import StephanyAtuacao1 from "./images/flagrantes.png";  // Flagrantes
-import StephanyAtuacao2 from "./images/execucao.png";    // Execução
-import StephanyAtuacao3 from "./images/juri.png";        // Tribunal do Júri
-import StephanyAtuacao4 from "./images/processos2.png";   // Processos Criminais – 1º e 2º Grau
+// Imagens do Hero: "home.png" para desktop e "home2.png" para mobile (usadas via CSS)
+import StephanyAtuacao1 from "./images/flagrantes.png";
+import StephanyAtuacao2 from "./images/execucao.png";
+import StephanyAtuacao3 from "./images/juri.png";
+import StephanyAtuacao4 from "./images/processos2.png";
 
-// Duas imagens para o "Sobre"
-import StephanySobre1 from "./images/sobre1.png";        // Sobre - imagem padrão
-import StephanySobre2 from "./images/sobre2.png";        // Sobre - imagem para hover
+// Imagens para a seção Sobre
+import StephanySobre1 from "./images/sobre1.png";
+import StephanySobre2 from "./images/sobre2.png";
 
-// Logo para colocar na seção Contato
+// Logo para a seção Contato
 import logoContato from "./images/logo.png";
 
 function App() {
-  // Estado para controlar a imagem de "Sobre" (troca no hover)
   const [sobreImg, setSobreImg] = useState(StephanySobre1);
 
   return (
@@ -48,12 +47,8 @@ function App() {
         </div>
       </header>
 
-      {/* Seção Hero com Parallax */}
-      <section
-        id="home"
-        className="hero-section"
-        style={{ backgroundImage: `url(${StephanyHero})` }}
-      >
+      {/* Seção Hero (imagem de fundo definida via CSS) */}
+      <section id="home" className="hero-section">
         <div className="hero-overlay"></div>
         <div className="hero-content" data-anim="fade-up">
           <h2 className="hero-title">Advocacia Criminal</h2>
@@ -63,9 +58,10 @@ function App() {
           <button
             className="btn-hero"
             onClick={() => {
-              document
-                .getElementById("atuacao")
-                .scrollIntoView({ behavior: "smooth" });
+              const atuacaoSection = document.getElementById("atuacao");
+              if (atuacaoSection) {
+                atuacaoSection.scrollIntoView({ behavior: "smooth" });
+              }
             }}
           >
             Conheça Nossas Áreas
@@ -87,22 +83,18 @@ function App() {
             />
             <h3>Flagrantes e Audiência de Custódia</h3>
             <p>
-              Atendimento emergencial e acompanhamento imediato em casos de
-              prisão em flagrante, garantindo direitos do acusado em audiência
-              de custódia.
+              Atendimento emergencial e acompanhamento imediato em casos de prisão
+              em flagrante, garantindo direitos do acusado em audiência de custódia.
             </p>
           </div>
-
           <div className="card-atuacao" data-anim="fade-up" data-delay="0.1s">
             <img src={StephanyAtuacao2} alt="Execução Criminal" />
             <h3>Execução Criminal</h3>
             <p>
-              Atuação na defesa de presos em regime fechado, semiaberto ou
-              aberto, pedidos de progressão de regime, livramento condicional,
-              indulto, entre outros.
+              Atuação na defesa de presos em regime fechado, semiaberto ou aberto,
+              pedidos de progressão de regime, livramento condicional, entre outros.
             </p>
           </div>
-
           <div className="card-atuacao" data-anim="fade-up" data-delay="0.2s">
             <img src={StephanyAtuacao3} alt="Tribunal do Júri" />
             <h3>Tribunal do Júri</h3>
@@ -111,10 +103,11 @@ function App() {
               em plenários do Tribunal do Júri.
             </p>
           </div>
-
-          {/* Nova Área de Atuação */}
           <div className="card-atuacao" data-anim="fade-up" data-delay="0.3s">
-            <img src={StephanyAtuacao4} alt="Processos Criminais – 1º e 2º Grau" />
+            <img
+              src={StephanyAtuacao4}
+              alt="Processos Criminais – 1º e 2º Grau"
+            />
             <h3>Processos Criminais – 1º e 2º Grau</h3>
             <p>
               Atuação estratégica em ações penais envolvendo a Lei de Drogas, o
@@ -128,7 +121,6 @@ function App() {
       {/* Seção Sobre */}
       <section id="sobre" className="sobre-section">
         <div className="sobre-content" data-anim="fade-left">
-          {/* Trocamos a imagem no onMouseOver / onMouseOut */}
           <img
             src={sobreImg}
             alt="Stephany Daher"
@@ -147,13 +139,12 @@ function App() {
             Após ser aprovada em concurso público, trabalhou na Prefeitura de Goiânia,
             mas decidiu abrir mão da estabilidade para seguir seu verdadeiro propósito:
             a advocacia.
-            <br /><br />
+            <br />
+            <br />
             Desde então, dedica-se à defesa criminal com atuação estratégica, ética e
-            humanizada. Com experiência sólida em casos complexos, está disponível 24 horas
+            humanizada. Com experiência sólida em casos complexos, está disponível 24h
             para atender situações urgentes.
           </p>
-          <br />
-          <br />
           <br />
           <p>
             Acompanhe pelo Instagram:
@@ -179,7 +170,6 @@ function App() {
       <section id="contato" className="contato-section">
         <h2 data-anim="fade-down">Contato</h2>
         <div className="divider"></div>
-
         <div className="contato-container">
           <div className="contato-info" data-anim="fade-left">
             <h3>Atendimento 24h</h3>
@@ -212,7 +202,6 @@ function App() {
               E-mail: <strong>stephanydaheradv@gmail.com</strong>
             </p>
           </div>
-
           <div className="contato-logo" data-anim="fade-right">
             <img
               src={logoContato}
@@ -223,12 +212,12 @@ function App() {
         </div>
       </section>
 
-      {/* Ícone flutuante do WhatsApp */}
+      {/* Ícone WhatsApp flutuante */}
       <a
         href="https://wa.me/5562992747813"
-        className="whatsapp-fixo"
         target="_blank"
         rel="noreferrer"
+        className="whatsapp-fixo"
       >
         <img src={iconeWhatsapp} alt="WhatsApp" />
       </a>
