@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 // Importações de imagens para a aplicação
-import iconeWhatsapp from "./images/icone-whatsapp.png";
+import iconeWhatsapp from "./images/whatsapp.png";
 import iconeInstagram from "./images/icone-instagram.png";
 import imagemLocalizacao from "./images/imagem-localizacao.png";
 
