@@ -3,8 +3,8 @@ import "./App.css";
 
 // Importações de imagens para a aplicação
 import iconeWhatsapp from "./images/whatsapp.png";
-import iconeInstagram from "./images/icone-instagram.png";
-import imagemLocalizacao from "./images/imagem-localizacao.png";
+import iconeInstagram from "./images/instagram.png";
+import imagemLocalizacao from "./images/localizacao.png";
 
 // Imagens do Hero: "home.png" para desktop e "home2.png" para mobile (usadas via CSS)
 import StephanyAtuacao1 from "./images/flagrantes.png";
@@ -34,7 +34,7 @@ function App() {
                 <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#atuacao">Áreas de Atuação</a>
+                <a href="#atuacao">Serviços</a>
               </li>
               <li>
                 <a href="#sobre">Sobre</a>
@@ -64,7 +64,7 @@ function App() {
               }
             }}
           >
-            Conheça Nossas Áreas
+            Conheça Nossas Áreas de Atuação
           </button>
         </div>
       </section>
@@ -83,24 +83,21 @@ function App() {
             />
             <h3>Flagrantes e Audiência de Custódia</h3>
             <p>
-              Atendimento emergencial e acompanhamento imediato em casos de prisão
-              em flagrante, garantindo direitos do acusado em audiência de custódia.
+              Acompanhamento especializado em casos de prisão em flagrante, atuando tanto durante o interrogatório policial quanto nas audiências de custódia para garantir os direitos do acusado desde o primeiro momento.
             </p>
           </div>
           <div className="card-atuacao" data-anim="fade-up" data-delay="0.1s">
             <img src={StephanyAtuacao2} alt="Execução Criminal" />
             <h3>Execução Criminal</h3>
             <p>
-              Atuação na defesa de presos em regime fechado, semiaberto ou aberto,
-              pedidos de progressão de regime, livramento condicional, entre outros.
+              Atuação na defesa de presos em regime fechado, semiaberto e aberto, incluindo pedidos de progressão de regime, livramento condicional, indulto e revogação de monitoramento eletrônico, entre outros.
             </p>
           </div>
           <div className="card-atuacao" data-anim="fade-up" data-delay="0.2s">
             <img src={StephanyAtuacao3} alt="Tribunal do Júri" />
             <h3>Tribunal do Júri</h3>
             <p>
-              Atuação em processos de crimes dolosos contra a vida, com expertise
-              em plenários do Tribunal do Júri.
+              Atuação em crimes dolosos contra a vida, abrangendo a fase de pronúncia e o julgamento no Tribunal do Júri, com interposição de recursos após o julgamento.
             </p>
           </div>
           <div className="card-atuacao" data-anim="fade-up" data-delay="0.3s">
@@ -110,10 +107,7 @@ function App() {
             />
             <h3>Processos Criminais – 1º e 2º Grau</h3>
             <p>
-              Atuação estratégica em ações penais envolvendo a Lei de Drogas, o
-              Estatuto do Desarmamento e outros crimes, com foco em teses defensivas
-              consistentes desde a investigação até os tribunais.
-            </p>
+            Atuação estratégica em ações penais envolvendo a Lei de Drogas, o Estatuto do Desarmamento, o crime de estelionato, entre outros ilícitos, com foco em teses defensivas consistentes, desde a fase investigatória até os tribunais, incluindo a interposição de habeas corpus.            </p>
           </div>
         </div>
       </section>
@@ -135,7 +129,9 @@ function App() {
             <strong>OAB/GO 56880</strong> - Stephany Daher é advogada criminalista,
             formada em Direito pela PUC Goiás desde 2018. Iniciou sua trajetória no
             Tribunal Regional Eleitoral, em Aparecida de Goiânia, onde atuou como
-            estagiária. <br />
+            estagiária.
+            <br />
+            <br />
             Após ser aprovada em concurso público, trabalhou na Prefeitura de Goiânia,
             mas decidiu abrir mão da estabilidade para seguir seu verdadeiro propósito:
             a advocacia.
@@ -177,6 +173,9 @@ function App() {
               Telefone: <strong>(62) 99274-7813</strong>
             </p>
             <p>
+              E-mail: <strong>stephanydaheradv@gmail.com</strong>
+            </p>
+            <p>
               Endereço:
               <br />
               <em>
@@ -198,9 +197,10 @@ function App() {
                 />
               </a>
             </p>
-            <p>
-              E-mail: <strong>stephanydaheradv@gmail.com</strong>
+            <p className="localizacao-orientacao">
+              Clique na imagem acima para visualizar a localização.
             </p>
+
           </div>
           <div className="contato-logo" data-anim="fade-right">
             <img

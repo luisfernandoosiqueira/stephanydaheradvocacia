@@ -183,7 +183,7 @@ nav {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding-bottom: 1rem;
-  text-align: center;
+  /* Removido text-align: center para aplicar alinhamentos específicos */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -205,16 +205,20 @@ nav {
   transform: scale(1.05);
 }
 
+/* Centraliza o título dos cards */
 .card-atuacao h3 {
   font-size: 1.3rem;
   margin: 1rem 0 0.5rem;
   color: #333;
+  text-align: center;
 }
 
+/* Justifica o parágrafo dos cards */
 .card-atuacao p {
   font-size: 1rem;
   color: #555;
   padding: 0 1rem;
+  text-align: justify;
 }
 
 /* Seção Sobre */
@@ -261,8 +265,8 @@ nav {
 .btn-instagram {
   display: inline-flex;
   align-items: center;
-  background-color: #bb0000;
-  color: #fff;
+  background-color: #fff;
+  color: black;
   padding: 0.6rem 1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -275,8 +279,8 @@ nav {
 }
 
 .icon-instagram {
-  width: 24px;
-  height: 24px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   margin-right: 0.5rem;
 }
@@ -342,12 +346,30 @@ nav {
 
 /* Imagem de localização */
 .localizacao-img {
-  width: 120px;
+  width: 140px; /* Aumentado de 120px para 140px */
   transition: transform 0.3s;
 }
 
 .localizacao-img:hover {
   transform: scale(1.05);
+}
+
+/* Ajuste na responsividade da imagem de localização */
+@media (max-width: 768px) {
+  .localizacao-img {
+    width: 260px; /* Aumento adicional para telas menores */
+    border-radius: 8px;
+  }
+}
+
+/* Mensagem de orientação para a localização */
+.localizacao-orientacao {
+  font-size: 0.9rem;  
+  font-weight: bold;  
+  text-align: center;
+  color: #444;
+  margin-top: -5px;  /* Margem negativa para aproximar o texto da imagem */
+  line-height: 1.2;  /* Reduz o espaçamento entre as linhas */
 }
 
 /* Logo na Seção Contato */
@@ -493,10 +515,8 @@ nav {
     background-image: var(--hero-mobile);
     background-attachment: scroll;
   }
-}
 
-/* Alternativa de responsividade para a Navbar (centralizada) */
-@media (max-width: 768px) {
+  /* Alternativa de responsividade para a Navbar (centralizada) */
   .navbar-container {
     align-items: center;
     justify-content: center;
