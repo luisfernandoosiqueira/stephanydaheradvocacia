@@ -142,7 +142,9 @@ function App() {
             para atender situações urgentes.
           </p>
           <br />
-          <p>
+          <br />
+          
+          <p className="sobre-instagram">
             Acompanhe pelo Instagram:
             <br />
             <a

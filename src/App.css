@@ -274,6 +274,17 @@ nav {
   transition: background-color 0.3s ease;
 }
 
+/* Ajuste na responsividade do botão Instagram e @*/
+@media (max-width: 768px) {
+  .sobre-instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+}
+
 .btn-instagram:hover {
   background-color: #8c0000;
 }
@@ -360,6 +371,7 @@ nav {
     width: 260px; /* Aumento adicional para telas menores */
     border-radius: 8px;
   }
+  
 }
 
 /* Mensagem de orientação para a localização */
