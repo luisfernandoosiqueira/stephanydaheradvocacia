@@ -1,4 +1,3 @@
-/* Definição de variáveis para as imagens do Hero */
 :root {
   --hero-desktop: url('./images/home3.png');
   --hero-mobile: url('./images/home2.png');
@@ -85,7 +84,7 @@ nav {
   background-image: var(--hero-desktop);
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed; /* Efeito parallax no desktop */
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,7 +182,6 @@ nav {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding-bottom: 1rem;
-  /* Removido text-align: center para aplicar alinhamentos específicos */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -205,7 +203,6 @@ nav {
   transform: scale(1.05);
 }
 
-/* Centraliza o título dos cards */
 .card-atuacao h3 {
   font-size: 1.3rem;
   margin: 1rem 0 0.5rem;
@@ -213,13 +210,58 @@ nav {
   text-align: center;
 }
 
-/* Justifica o parágrafo dos cards */
 .card-atuacao p {
   font-size: 1rem;
   color: #555;
   padding: 0 1rem;
   text-align: justify;
 }
+
+/* Seção Dúvidas Frequentes e Accordion */
+.faq-section {
+  padding: 4rem 2rem;
+  background-color: #fdfdfd;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.accordion-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Indicador de seta */
+.accordion-arrow {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Ajuste na versão mobile apenas para a seta fechada */
+@media (max-width: 768px) {
+  .accordion-arrow[data-status="closed"] {
+    font-size: 1.6rem;
+    display: inline-block;
+    transform: scaleX(0.7);
+    position: relative;
+    top: 0.1em; /* ajusta verticalmente a seta para baixo */
+  }
+}
+
 
 /* Seção Sobre */
 .sobre-section {
@@ -261,7 +303,6 @@ nav {
   text-align: justify;
 }
 
-/* Botão Instagram */
 .btn-instagram {
   display: inline-flex;
   align-items: center;
@@ -274,15 +315,12 @@ nav {
   transition: background-color 0.3s ease;
 }
 
-/* Ajuste na responsividade do botão Instagram e @*/
 @media (max-width: 768px) {
   .sobre-instagram {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
-  
 }
 
 .btn-instagram:hover {
@@ -355,9 +393,8 @@ nav {
   text-decoration: underline;
 }
 
-/* Imagem de localização */
 .localizacao-img {
-  width: 140px; /* Aumentado de 120px para 140px */
+  width: 140px;
   transition: transform 0.3s;
 }
 
@@ -365,26 +402,22 @@ nav {
   transform: scale(1.05);
 }
 
-/* Ajuste na responsividade da imagem de localização */
 @media (max-width: 768px) {
   .localizacao-img {
-    width: 260px; /* Aumento adicional para telas menores */
+    width: 260px;
     border-radius: 8px;
   }
-  
 }
 
-/* Mensagem de orientação para a localização */
 .localizacao-orientacao {
-  font-size: 0.9rem;  
-  font-weight: bold;  
+  font-size: 0.9rem;
+  font-weight: bold;
   text-align: center;
   color: #444;
-  margin-top: -5px;  /* Margem negativa para aproximar o texto da imagem */
-  line-height: 1.2;  /* Reduz o espaçamento entre as linhas */
+  margin-top: -5px;
+  line-height: 1.2;
 }
 
-/* Logo na Seção Contato */
 .logo-contato {
   width: 220px;
   border-radius: 4px;
@@ -505,43 +538,46 @@ nav {
 
 /* Responsividade: para telas menores (até 768px) */
 @media (max-width: 768px) {
-  /* Navbar ajustes */
   .navbar-container {
     flex-direction: column;
     align-items: flex-start;
   }
+
   nav {
     margin-top: 0.5rem;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     margin-left: 0;
   }
+
   .logo {
     margin-bottom: 0.5rem;
   }
 
-  /* Seção Hero: altera a imagem de fundo e o attachment */
   .hero-section {
     background-image: var(--hero-mobile);
     background-attachment: scroll;
   }
 
-  /* Alternativa de responsividade para a Navbar (centralizada) */
   .navbar-container {
     align-items: center;
     justify-content: center;
   }
+
   .logo {
     margin-bottom: 1rem;
     text-align: center;
   }
+
   nav {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
   .nav-links {
     width: 100%;
     flex-direction: row;
