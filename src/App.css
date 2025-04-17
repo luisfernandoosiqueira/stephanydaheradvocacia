@@ -142,7 +142,7 @@ nav {
 
 /* Seção Áreas de Atuação */
 .atuacao-section {
-  padding: 4rem 2rem;
+  padding: 2rem;
   background-color: #fdfdfd;
 }
 
@@ -219,7 +219,7 @@ nav {
 
 /* Seção Dúvidas Frequentes e Accordion */
 .faq-section {
-  padding: 4rem 2rem;
+  padding: 2rem;
   background-color: #fdfdfd;
 }
 
@@ -254,14 +254,14 @@ nav {
 /* Ajuste na versão mobile apenas para a seta fechada */
 @media (max-width: 768px) {
   .accordion-arrow[data-status="closed"] {
-    font-size: 1.6rem;
-    display: inline-block;
-    transform: scaleX(0.7);
-    position: relative;
+    font-size: 1.65rem; /* aumenta a seta de fechado */
+    display: inline-block; /* mantém a seta na mesma linha */
+    transform: scaleY(1.6); /* aumenta verticalmente a seta */
+    transform: scaleX(0.7); /* aumenta horizontalmente a seta */
+    position: relative; /* permite posicionar a seta verticalmente */
     top: 0.1em; /* ajusta verticalmente a seta para baixo */
   }
 }
-
 
 /* Seção Sobre */
 .sobre-section {
@@ -269,7 +269,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
-  margin: 4rem auto;
+  margin: 2rem auto;
   gap: 2rem;
   padding: 0 1.5rem;
 }
@@ -337,7 +337,7 @@ nav {
 /* Seção Contato */
 .contato-section {
   background-color: #f7f7f7;
-  padding: 4rem 2rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -459,8 +459,8 @@ nav {
   background-color: #222;
   color: #ddd;
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
   font-size: 0.9rem;
 }
 

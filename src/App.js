@@ -232,22 +232,6 @@ const faqs = [
         </div>
       </section>
 
-      {/* Seção Dúvidas Frequentes */}
-      <section id="duvidas" className="faq-section">
-        <div className="section-header">
-          <h2 data-anim="fade-right">Dúvidas Frequentes</h2>
-          <div className="divider"></div>
-        </div>
-        <div className="accordion">
-          {faqs.map((faq, index) => (
-            <AccordionItem
-              key={index}
-              question={faq.question}
-              answer={faq.answer}
-            />
-          ))}
-        </div>
-      </section>
 
       {/* Seção Sobre */}
       <section id="sobre" className="sobre-section">
@@ -299,6 +283,24 @@ const faqs = [
           </p>
         </div>
       </section>
+
+      {/* Seção Dúvidas Frequentes */}
+      <section id="duvidas" className="faq-section">
+        <div className="section-header">
+          <h2 data-anim="fade-right">Dúvidas Frequentes</h2>
+          <div className="divider"></div>
+        </div>
+        <div className="accordion">
+          {faqs.map((faq, index) => (
+            <AccordionItem
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+            />
+          ))}
+        </div>
+      </section>
+
 
       {/* Seção Contato */}
       <section id="contato" className="contato-section">
