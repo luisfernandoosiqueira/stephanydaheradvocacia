@@ -304,12 +304,13 @@ nav {
 }
 
 .btn-instagram {
+  font-family: 'Montserrat', sans-serif;
   display: inline-flex;
   align-items: center;
   background-color: #fff;
   color: black;
-  padding: 0.6rem 1rem;
-  border-radius: 4px;
+  padding: 0.4rem 0.67rem;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s ease;
@@ -324,7 +325,7 @@ nav {
 }
 
 .btn-instagram:hover {
-  background-color: #8c0000;
+  background: linear-gradient(135deg, #800080 0%, #ff00ff 50%, #ff4500 100%);
 }
 
 .icon-instagram {
@@ -584,4 +585,27 @@ nav {
     justify-content: space-around;
     text-align: center;
   }
+
+  .atuacao-section {
+    padding: 2rem;
+  }
+  
+  .faq-section {
+    padding: 2rem;
+  }
+  
+  .sobre-section {
+    margin: 2rem auto;
+  }
+  
+  .contato-section {
+    padding: 2rem;
+  }
+  
+  .footer {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+
 }

@@ -22,7 +22,7 @@ import logoContato from "./images/logo.png";
 // Componente AccordionItem com indicador de seta
 function AccordionItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   // Define o ícone de seta: ► (fechado) e ▼ (aberto)
   const arrowIcon = isOpen ? "▼" : "►";
 
@@ -46,89 +46,89 @@ function AccordionItem({ question, answer }) {
 function App() {
   const [sobreImg, setSobreImg] = useState(StephanySobre1);
 
- // Array com as 20 FAQs
-const faqs = [
-  {
-    question: "O que é audiência de custódia?",
-    answer: "É o ato em que a pessoa presa em flagrante é apresentada ao juiz em até 24 horas. O juiz verifica se houve abuso, se a prisão foi legal e se deve ser mantida. O modo como a situação é apresentada pode influenciar diretamente a decisão."
-  },
-  {
-    question: "Qual a diferença entre prisão temporária e preventiva?",
-    answer: "A temporária é usada durante a investigação, com prazos definidos. Já a preventiva pode ser decretada a qualquer momento para garantir o andamento do processo. Saber diferenciar ajuda a entender o que pode ser feito em cada fase."
-  },
-  {
-    question: "Fui preso em flagrante, e agora?",
-    answer: "Após o flagrante, a pessoa é levada à delegacia e depois ao juiz. A decisão pode ser prisão preventiva, liberdade provisória ou outra medida. A forma como os fatos são apresentados nesse momento pode impactar diretamente na liberdade."
-  },
-  {
-    question: "Tenho direito à liberdade provisória?",
-    answer: "Sim, se não houver risco à investigação, à ordem pública ou à aplicação da lei. Residência fixa, trabalho e bons antecedentes costumam contar a favor. Apresentar isso corretamente costuma ser determinante."
-  },
-  {
-    question: "Paguei fiança e agora?",
-    answer: "Pagar fiança permite responder em liberdade, mas o processo continua. É importante seguir todas as condições impostas para não perder o benefício e evitar novas medidas."
-  },
-  {
-    question: "Posso responder ao processo em casa?",
-    answer: "Sim, em casos específicos — como gestantes, idosos, doentes graves ou responsáveis por crianças. O juiz pode converter a prisão em domiciliar quando as condições legais estão presentes e bem fundamentadas."
-  },
-  {
-    question: "Emprestei minha conta e fui envolvido em golpe. E agora?",
-    answer: "Mesmo sem saber do crime, quem empresta a conta pode ser responsabilizado. Apresentar provas de boa-fé e ausência de vantagem indevida é essencial para evitar prejuízos maiores."
-  },
-  {
-    question: "O que é um habeas corpus e quando usar?",
-    answer: "É uma medida para proteger quem está sofrendo ou correndo risco de prisão ilegal. Pode ser usado em qualquer fase. A clareza e a urgência no pedido são decisivas para o resultado."
-  },
-  {
-    question: "Fui intimado para depor. Posso ir sozinho?",
-    answer: "Sim, mas nem sempre é indicado. Saber se está sendo ouvido como testemunha ou investigado pode mudar completamente o que deve ou não ser dito. A preparação prévia costuma evitar problemas desnecessários."
-  },
-  {
-    question: "A polícia levou meu celular. Isso é legal?",
-    answer: "Só é permitido em flagrante, por ordem judicial ou se houver risco à investigação. Mesmo assim, o conteúdo só pode ser acessado com autorização do juiz. É possível contestar abusos nesse tipo de situação."
-  },
-  {
-    question: "A vítima não quis representar. O processo continua?",
-    answer: "Em alguns crimes, como ameaça ou lesão leve, a representação da vítima é necessária. Se ela não desejar prosseguir, o processo pode ser arquivado. Respeitar os prazos e entender os detalhes da situação é essencial."
-  },
-  {
-    question: "Tenho antecedentes. Isso impede liberdade?",
-    answer: "Ter antecedentes pode dificultar, mas não impede automaticamente. Cada caso é analisado de forma individual. A apresentação de vínculos sociais e profissionais pode equilibrar o histórico."
-  },
-  {
-    question: "Posso ser preso só por estar sendo investigado?",
-    answer: "Não. A simples investigação não autoriza prisão. Ela só ocorre em flagrante ou com ordem judicial fundamentada. A postura durante a apuração pode influenciar na condução do caso."
-  },
-  {
-    question: "Fui chamado para audiência. Sou obrigado a comparecer?",
-    answer: "Sim. Se você foi intimado para uma audiência, o comparecimento é obrigatório. A ausência injustificada pode trazer prejuízos, como condução coercitiva ou até decisões desfavoráveis. Entender o motivo da audiência e o que será tratado nela é fundamental para se preparar da forma correta."
-  },
-  {
-    question: "Já fui condenado, mas o processo ainda está em recurso. Posso ser preso?",
-    answer: "Depende do caso. Em geral, enquanto o recurso suspende os efeitos da condenação, a prisão pode ser evitada. Mas o juiz pode determinar a prisão em situações específicas."
-  },
-  {
-    question: "Meu parente foi preso. O que fazer?",
-    answer: "O ideal é reunir documentos como comprovante de residência, vínculo familiar e profissional. Isso pode ser usado para demonstrar que ele pode responder em liberdade. Agir rápido costuma ser decisivo."
-  },
-  {
-    question: "A tornozeleira pode ser retirada?",
-    answer: "Sim. A qualquer momento, o juiz pode rever a medida, especialmente se não houver mais necessidade. A demonstração de mudança nas circunstâncias é fundamental para o pedido."
-  },
-  {
-    question: "Sou réu primário. Isso me ajuda?",
-    answer: "Sim. Primariedade, bons antecedentes e conduta social positiva podem pesar a favor em pedidos de liberdade, substituição de pena ou medidas alternativas. Apresentar isso corretamente é sempre relevante."
-  },
-  {
-    question: "Posso ser processado mesmo sem provas?",
-    answer: "O processo pode ser iniciado com indícios. No entanto, sem provas suficientes, não pode haver condenação. A forma de enfrentar a acusação desde o início pode evitar injustiças."
-  },
-  {
-    question: "Posso contratar um advogado só para uma parte do caso?",
-    answer: "Sim. É possível contratar apenas para um pedido específico, como habeas corpus ou revogação de tornozeleira. Isso permite resolver questões pontuais sem compromisso com toda a defesa."
-  }
-];
+  // Array com as 20 FAQs
+  const faqs = [
+    {
+      question: "O que é audiência de custódia?",
+      answer: "É o ato em que a pessoa presa em flagrante é apresentada ao juiz em até 24 horas. O juiz verifica se houve abuso, se a prisão foi legal e se deve ser mantida. O modo como a situação é apresentada pode influenciar diretamente a decisão."
+    },
+    {
+      question: "Qual a diferença entre prisão temporária e preventiva?",
+      answer: "A temporária é usada durante a investigação, com prazos definidos. Já a preventiva pode ser decretada a qualquer momento para garantir o andamento do processo. Saber diferenciar ajuda a entender o que pode ser feito em cada fase."
+    },
+    {
+      question: "Fui preso em flagrante, e agora?",
+      answer: "Após o flagrante, a pessoa é levada à delegacia e depois ao juiz. A decisão pode ser prisão preventiva, liberdade provisória ou outra medida. A forma como os fatos são apresentados nesse momento pode impactar diretamente na liberdade."
+    },
+    {
+      question: "Tenho direito à liberdade provisória?",
+      answer: "Sim, se não houver risco à investigação, à ordem pública ou à aplicação da lei. Residência fixa, trabalho e bons antecedentes costumam contar a favor. Apresentar isso corretamente costuma ser determinante."
+    },
+    {
+      question: "Paguei fiança e agora?",
+      answer: "Pagar fiança permite responder em liberdade, mas o processo continua. É importante seguir todas as condições impostas para não perder o benefício e evitar novas medidas."
+    },
+    {
+      question: "Posso responder ao processo em casa?",
+      answer: "Sim, em casos específicos — como gestantes, idosos, doentes graves ou responsáveis por crianças. O juiz pode converter a prisão em domiciliar quando as condições legais estão presentes e bem fundamentadas."
+    },
+    {
+      question: "Emprestei minha conta e fui envolvido em golpe. E agora?",
+      answer: "Mesmo sem saber do crime, quem empresta a conta pode ser responsabilizado. Apresentar provas de boa-fé e ausência de vantagem indevida é essencial para evitar prejuízos maiores."
+    },
+    {
+      question: "O que é um habeas corpus e quando usar?",
+      answer: "É uma medida para proteger quem está sofrendo ou correndo risco de prisão ilegal. Pode ser usado em qualquer fase. A clareza e a urgência no pedido são decisivas para o resultado."
+    },
+    {
+      question: "Fui intimado para depor. Posso ir sozinho?",
+      answer: "Sim, mas nem sempre é indicado. Saber se está sendo ouvido como testemunha ou investigado pode mudar completamente o que deve ou não ser dito. A preparação prévia costuma evitar problemas desnecessários."
+    },
+    {
+      question: "A polícia levou meu celular. Isso é legal?",
+      answer: "Só é permitido em flagrante, por ordem judicial ou se houver risco à investigação. Mesmo assim, o conteúdo só pode ser acessado com autorização do juiz. É possível contestar abusos nesse tipo de situação."
+    },
+    {
+      question: "A vítima não quis representar. O processo continua?",
+      answer: "Em alguns crimes, como ameaça ou lesão leve, a representação da vítima é necessária. Se ela não desejar prosseguir, o processo pode ser arquivado. Respeitar os prazos e entender os detalhes da situação é essencial."
+    },
+    {
+      question: "Tenho antecedentes. Isso impede liberdade?",
+      answer: "Ter antecedentes pode dificultar, mas não impede automaticamente. Cada caso é analisado de forma individual. A apresentação de vínculos sociais e profissionais pode equilibrar o histórico."
+    },
+    {
+      question: "Posso ser preso só por estar sendo investigado?",
+      answer: "Não. A simples investigação não autoriza prisão. Ela só ocorre em flagrante ou com ordem judicial fundamentada. A postura durante a apuração pode influenciar na condução do caso."
+    },
+    {
+      question: "Fui chamado para audiência. Sou obrigado a comparecer?",
+      answer: "Sim. Se você foi intimado para uma audiência, o comparecimento é obrigatório. A ausência injustificada pode trazer prejuízos, como condução coercitiva ou até decisões desfavoráveis. Entender o motivo da audiência e o que será tratado nela é fundamental para se preparar da forma correta."
+    },
+    {
+      question: "Já fui condenado, mas o processo ainda está em recurso. Posso ser preso?",
+      answer: "Depende do caso. Em geral, enquanto o recurso suspende os efeitos da condenação, a prisão pode ser evitada. Mas o juiz pode determinar a prisão em situações específicas."
+    },
+    {
+      question: "Meu parente foi preso. O que fazer?",
+      answer: "O ideal é reunir documentos como comprovante de residência, vínculo familiar e profissional. Isso pode ser usado para demonstrar que ele pode responder em liberdade. Agir rápido costuma ser decisivo."
+    },
+    {
+      question: "A tornozeleira pode ser retirada?",
+      answer: "Sim. A qualquer momento, o juiz pode rever a medida, especialmente se não houver mais necessidade. A demonstração de mudança nas circunstâncias é fundamental para o pedido."
+    },
+    {
+      question: "Sou réu primário. Isso me ajuda?",
+      answer: "Sim. Primariedade, bons antecedentes e conduta social positiva podem pesar a favor em pedidos de liberdade, substituição de pena ou medidas alternativas. Apresentar isso corretamente é sempre relevante."
+    },
+    {
+      question: "Posso ser processado mesmo sem provas?",
+      answer: "O processo pode ser iniciado com indícios. No entanto, sem provas suficientes, não pode haver condenação. A forma de enfrentar a acusação desde o início pode evitar injustiças."
+    },
+    {
+      question: "Posso contratar um advogado só para uma parte do caso?",
+      answer: "Sim. É possível contratar apenas para um pedido específico, como habeas corpus ou revogação de tornozeleira. Isso permite resolver questões pontuais sem compromisso com toda a defesa."
+    }
+  ];
 
   return (
     <div className="App">
@@ -184,6 +184,7 @@ const faqs = [
           <div className="divider"></div>
         </div>
         <div className="cards-atuacao">
+
           <div className="card-atuacao" data-anim="fade-up">
             <img
               src={StephanyAtuacao1}
@@ -197,24 +198,7 @@ const faqs = [
               momento.
             </p>
           </div>
-          <div className="card-atuacao" data-anim="fade-up" data-delay="0.1s">
-            <img src={StephanyAtuacao2} alt="Execução Criminal" />
-            <h3>Execução Criminal</h3>
-            <p>
-              Atuação na defesa de presos em regime fechado, semiaberto e aberto,
-              incluindo pedidos de progressão de regime, livramento condicional,
-              indulto e revogação de monitoramento eletrônico, entre outros.
-            </p>
-          </div>
-          <div className="card-atuacao" data-anim="fade-up" data-delay="0.2s">
-            <img src={StephanyAtuacao3} alt="Tribunal do Júri" />
-            <h3>Tribunal do Júri</h3>
-            <p>
-              Atuação em crimes dolosos contra a vida, abrangendo a fase de
-              pronúncia e o julgamento no Tribunal do Júri, com interposição de
-              recursos após o julgamento.
-            </p>
-          </div>
+
           <div className="card-atuacao" data-anim="fade-up" data-delay="0.3s">
             <img
               src={StephanyAtuacao4}
@@ -229,6 +213,28 @@ const faqs = [
               corpus.
             </p>
           </div>
+
+
+          <div className="card-atuacao" data-anim="fade-up" data-delay="0.2s">
+            <img src={StephanyAtuacao3} alt="Tribunal do Júri" />
+            <h3>Tribunal do Júri</h3>
+            <p>
+              Atuação em crimes dolosos contra a vida, abrangendo a fase de
+              pronúncia e o julgamento no Tribunal do Júri, com interposição de
+              recursos após o julgamento.
+            </p>
+          </div>
+
+          <div className="card-atuacao" data-anim="fade-up" data-delay="0.1s">
+            <img src={StephanyAtuacao2} alt="Execução Criminal" />
+            <h3>Execução Criminal</h3>
+            <p>
+              Atuação na defesa de presos em regime fechado, semiaberto e aberto,
+              incluindo pedidos de progressão de regime, livramento condicional,
+              indulto e revogação de monitoramento eletrônico, entre outros.
+            </p>
+          </div>
+
         </div>
       </section>
 
@@ -353,7 +359,7 @@ const faqs = [
 
       {/* Ícone WhatsApp flutuante */}
       <a
-        href="https://wa.me/5562992747813"
+        href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Encontrei%20seu%20WhatsApp%20no%20site%20stephanydaheradvocacia.com.br%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20Pode%20me%20ajudar%3F"
         target="_blank"
         rel="noreferrer"
         className="whatsapp-fixo"
