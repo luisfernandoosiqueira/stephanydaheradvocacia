@@ -20,6 +20,16 @@ p {
   hyphens: auto;
 }
 
+/* Regra global para h3 */
+h2, a {
+  hyphens: none; /* Desativa hifenização */
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  word-break: normal; /* Garante que palavras não sejam quebradas no meio */
+  overflow-wrap: normal; /* Palavras inteiras são movidas para a próxima linha */
+  white-space: normal; /* Permite quebras de linha naturais */
+}
+
 * {
   margin: 0;
   padding: 0;
