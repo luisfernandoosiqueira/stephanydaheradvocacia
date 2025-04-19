@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <!-- Alterado de lang="en" para lang="pt-BR" -->
+<html lang="pt-BR"> <!-- Alterado de lang="en" para pt-BR -->
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -12,6 +12,9 @@
     <meta name="robots" content="index, follow" />
     <!-- URL canônica para evitar conteúdo duplicado -->
     <link rel="canonical" href="https://stephanydaheradvocacia.com.br/" />
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="C7N8zdfb4XMS1BRwAAMbe-bOoIkr2IdplVBv-A58JOE" />
 
     <!-- Open Graph (para WhatsApp, Facebook, LinkedIn...) -->
     <meta property="og:title" content="Stephany Daher Advocacia" />
@@ -30,21 +33,14 @@
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
     <!-- Adicionando o Hyphenopoly para hifenização correta -->
     <script src="https://unpkg.com/hyphenopoly@2.7.1/Hyphenopoly_Loader.js"></script>
     <script>
       window.Hyphenopoly = {
-        require: {
-          "pt-br": "FORCEHYPHENOPOLY"
-        },
-        setup: {
-          selectors: {
-            ".accordion-answer": { hyphen: "-" }
-          }
-        }
+        require: { "pt-br": "FORCEHYPHENOPOLY" },
+        setup: { selectors: { ".accordion-answer": { hyphen: "-" } } }
       };
     </script>
 
@@ -65,9 +61,7 @@
         "addressCountry": "BR"
       },
       "openingHours": "Mo,Tu,We,Th,Fr 08:00-18:00",
-      "sameAs": [
-        "https://www.instagram.com/daherstephany/"
-      ]
+      "sameAs": ["https://www.instagram.com/daherstephany/"]
     }
     </script>
 
