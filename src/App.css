@@ -20,7 +20,7 @@ p {
   hyphens: auto;
 }
 
-/* Regra global para h3 */
+/* Regra global para h2 e links */
 h2, a {
   hyphens: none; /* Desativa hifenização */
   -webkit-hyphens: none;
@@ -427,7 +427,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
+
+
 }
 
 .btn-instagram:hover {
@@ -810,7 +813,10 @@ nav {
   }
 
   .sobre-section {
-    margin: 2rem auto;
+    margin-top: 2rem;    /* Margem superior */
+    margin-right: auto;  /* Margem direita */
+    margin-bottom: 0rem; /* Margem inferior */
+    margin-left: auto;   /* Margem esquerda */
   }
 
   .links-list {

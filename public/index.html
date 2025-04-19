@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR"> <!-- Alterado de lang="en" para lang="pt-BR" -->
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -13,7 +13,7 @@
     <meta property="og:title" content="Stephany Daher Advocacia" />
     <meta property="og:description" content="Defesa penal com estratégia e humanidade. Advogada especialista em custódia, flagrante e execução criminal." />
     
-    <!-- Imagem de compartilhamento-->
+    <!-- Imagem de compartilhamento -->
     <meta property="og:image" content="%PUBLIC_URL%/image.png" />
     
     <meta property="og:url" content="https://stephanydaheradvocacia.com.br" />
@@ -29,6 +29,21 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Adicionando o Hyphenopoly para hifenização correta -->
+    <script src="https://unpkg.com/hyphenopoly@2.7.1/Hyphenopoly_Loader.js"></script>
+    <script>
+      window.Hyphenopoly = {
+        require: {
+          "pt-br": "FORCEHYPHENOPOLY" // Carrega o dicionário para português brasileiro
+        },
+        setup: {
+          selectors: {
+            ".accordion-answer": { hyphen: "-" } // Aplica hifenização apenas ao .accordion-answer
+          }
+        }
+      };
+    </script>
 
     <title>Stephany Daher Advocacia</title>
   </head>

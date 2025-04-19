@@ -72,7 +72,7 @@ function App() {
     },
     {
       question: "Tenho direito à liberdade provisória?",
-      answer: "Sim, se não houver risco à investigação, à ordem pública ou à aplicação da lei.<br/>Residência fixa, trabalho e bons antecedentes costumam contar a favor.<br/>Apresentar isso corretamente costuma ser determinante."
+      answer: "Sim, desde que não haja risco à investigação, à ordem pública ou à aplicação da lei.<br/>Ter residência fixa, trabalho e bons antecedentes pode contar a favor.<br/>Apresentar essas informações de forma adequada faz toda a diferença."
     },
     {
       question: "Paguei fiança e agora?",
@@ -88,7 +88,7 @@ function App() {
     },
     {
       question: "O que é um habeas corpus e quando usar?",
-      answer: "É uma medida para proteger quem está sofrendo ou correndo risco de prisão ilegal.<br/>Pode ser usado em qualquer fase.<br/>A clareza e a urgência no pedido são decisivas para o resultado."
+      answer: "É um instrumento jurídico previsto na Constituição Federal para proteger o direito de liberdade de quem se encontra preso ou ameaçado de prisão de forma ilegal.<br/>Pode ser utilizado em qualquer fase, inclusive antes do início formal de um processo.<br/>A apresentação adequada da ilegalidade e da urgência costuma ser determinante para a concessão da medida."
     },
     {
       question: "Fui intimado para depor. Posso ir sozinho?",
@@ -116,11 +116,11 @@ function App() {
     },
     {
       question: "Já fui condenado, mas o processo ainda está em recurso. Posso ser preso?",
-      answer: "Depende do caso.<br/>Em geral, enquanto o recurso suspende os efeitos da condenação, a prisão pode be evitada.<br/>Mas o juiz pode determinar a prisão em situações específicas."
+      answer: "Depende do caso.<br/>Em geral, enquanto houver recurso com efeito suspensivo, a prisão pode ser evitada.<br/>Mas o juiz pode determinar a prisão em situações específicas."
     },
     {
       question: "Meu parente foi preso. O que fazer?",
-      answer: "O ideal é reunir documentos como comprovante de residência, vínculo familiar e profissional.<br/>Isso pode ser usado para demonstrar que ele pode responder em liberdade.<br/>Agir rápido costuma ser decisivo."
+      answer: "O mais indicado é buscar, o quanto antes, a orientação de um advogado.<br/>Também é importante reunir documentos como comprovante de residência, vínculo familiar e profissional, que poderão ser utilizados para demonstrar que ele reúne condições de responder ao processo em liberdade.<br/>A agilidade na atuação costuma ser determinante nesses casos."
     },
     {
       question: "A tornozeleira pode ser retirada?",
@@ -336,6 +336,7 @@ function App() {
         <p className="links-intro">
           Clique no link escolhido para ser direcionado à página do órgão ou
           instituição correspondente.
+          <br />
         </p>
         <ul className="links-list">
           <li><a href="https://projudi.tjgo.jus.br/ConsultaJurisprudencia" target="_blank" rel="noreferrer">Jurisprudência TJGO</a></li>
