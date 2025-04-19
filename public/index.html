@@ -8,14 +8,16 @@
     
     <!-- Descrição para buscadores -->
     <meta name="description" content="Stephany Daher Advocacia | Defesa criminal com comprometimento, experiência e estratégia. Atuação em custódia, flagrante, habeas corpus e execução penal." />
+    <!-- Permite indexação e rastreamento -->
+    <meta name="robots" content="index, follow" />
+    <!-- URL canônica para evitar conteúdo duplicado -->
+    <link rel="canonical" href="https://stephanydaheradvocacia.com.br/" />
 
     <!-- Open Graph (para WhatsApp, Facebook, LinkedIn...) -->
     <meta property="og:title" content="Stephany Daher Advocacia" />
     <meta property="og:description" content="Defesa penal com estratégia e humanidade. Advogada especialista em custódia, flagrante e execução criminal." />
-    
-    <!-- Imagem de compartilhamento -->
-    <meta property="og:image" content="%PUBLIC_URL%/image.png" />
-    
+    <!-- URL absoluta da imagem para compartilhamento -->
+    <meta property="og:image" content="https://stephanydaheradvocacia.com.br/image.png" />
     <meta property="og:url" content="https://stephanydaheradvocacia.com.br" />
     <meta property="og:type" content="website" />
 
@@ -23,7 +25,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Stephany Daher Advocacia" />
     <meta name="twitter:description" content="Especializada em custódia, flagrante e execução criminal." />
-    <meta name="twitter:image" content="%PUBLIC_URL%/imagem-compartilhamento.png" />
+    <!-- URL absoluta da imagem para Twitter -->
+    <meta name="twitter:image" content="https://stephanydaheradvocacia.com.br/imagem-compartilhamento.png" />
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -35,20 +38,43 @@
     <script>
       window.Hyphenopoly = {
         require: {
-          "pt-br": "FORCEHYPHENOPOLY" // Carrega o dicionário para português brasileiro
+          "pt-br": "FORCEHYPHENOPOLY"
         },
         setup: {
           selectors: {
-            ".accordion-answer": { hyphen: "-" } // Aplica hifenização apenas ao .accordion-answer
+            ".accordion-answer": { hyphen: "-" }
           }
         }
       };
     </script>
 
+    <!-- Structured Data JSON-LD para LegalService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Stephany Daher Advocacia",
+      "url": "https://stephanydaheradvocacia.com.br",
+      "telephone": "+55-62-99274-7813",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Eng. Atílio Correia Lima, 1434, sala 09",
+        "addressLocality": "Goiânia",
+        "addressRegion": "GO",
+        "postalCode": "74425-030",
+        "addressCountry": "BR"
+      },
+      "openingHours": "Mo,Tu,We,Th,Fr 08:00-18:00",
+      "sameAs": [
+        "https://www.instagram.com/daherstephany/"
+      ]
+    }
+    </script>
+
     <title>Stephany Daher Advocacia</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Você precisa habilitar o JavaScript para executar este app.</noscript>
     <div id="root"></div>
   </body>
 </html>
