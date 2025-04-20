@@ -1,0 +1,119 @@
+/* Seção Contato */
+.contato-section {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .contato-section h2 {
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #2f2f2f;
+  }
+  
+  .contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .contato-info,
+  .contato-logo {
+    flex: 1 1 350px;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contato-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .contato-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Estilo para o e-mail */
+  .email-text {
+    white-space: nowrap; /* Impede que o e-mail quebre internamente */
+    display: inline-block; /* Garante que o e-mail seja tratado como um bloco inline */
+  }
+  
+  /* Link do mapa */
+  .map-link {
+    color: #bb0000;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .map-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Imagem de localização */
+  .localizacao-img {
+    width: 140px;
+    transition: transform 0.3s;
+  }
+  
+  .localizacao-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Ajustes mobile */
+  @media (max-width: 768px) {
+    .localizacao-img {
+      width: 260px;
+      border-radius: 8px;
+    }
+  
+    /* Reduz o padding de .contato-info na versão mobile */
+    .contato-info {
+      padding: 1rem; /* Reduzido de 2rem para 1rem */
+    }
+  
+    /* Ajusta o parágrafo do e-mail para quebrar a linha inteira na versão mobile */
+    .contato-info p:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Texto de orientação abaixo do mapa */
+  .localizacao-orientacao {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+    margin-top: -5px;
+    line-height: 1.2;
+  }
+  
+  /* Logo na seção de contato */
+  .logo-contato {
+    width: 220px;
+    border-radius: 4px;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-contato:hover {
+    transform: scale(1.02);
+  }
+  

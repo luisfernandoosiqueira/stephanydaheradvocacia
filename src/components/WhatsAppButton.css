@@ -1,0 +1,12 @@
+.whatsapp-fixo {
+    position:fixed; bottom:20px; right:20px;
+    width:60px; height:60px; z-index:1000;
+    border-radius:50%; overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+    cursor:pointer; transition:transform .2s;
+  }
+  .whatsapp-fixo:hover { transform:scale(1.05); }
+  .whatsapp-fixo img {
+    width:100%; height:100%; object-fit:cover;
+  }
+  

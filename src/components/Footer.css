@@ -1,0 +1,18 @@
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #222;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}

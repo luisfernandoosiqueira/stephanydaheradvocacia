@@ -1,0 +1,10 @@
+/* Container das FAQs */
+.faq-section {
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
