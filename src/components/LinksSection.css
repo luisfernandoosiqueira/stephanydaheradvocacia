@@ -3,8 +3,12 @@
   }
   
   .links-intro {
-    max-width:800px; margin:0 auto 1.5rem;
-    text-align:center; font-size:1rem; color:#555;
+    max-width:800px; 
+    margin:0 auto 1.5rem;
+    text-align:center; 
+    font-size:1rem;
+    text-align: justify; /* Adicionado para alinhar o texto */ 
+    color:#555;
     line-height:1.6;
   }
   

@@ -10,10 +10,13 @@ function LinksSection() {
                 <h2 data-anim="fade-right">Links Úteis</h2>
                 <div className="divider" />
             </div>
+            <br />
             <p className="links-intro">
                 Clique no link escolhido para ser direcionado à página do órgão ou
                 instituição correspondente.
             </p>
+            <br />
+            
             <ul className="links-list">
                 <li><a href="https://projudi.tjgo.jus.br/ConsultaJurisprudencia" target="_blank" rel="noreferrer">Jurisprudência TJGO</a></li>
                 <li><a href="https://processo.stj.jus.br/SCON/" target="_blank" rel="noreferrer">Jurisprudência STJ</a></li>
@@ -27,6 +30,8 @@ function LinksSection() {
                 <li><a href="https://projudi.tjgo.jus.br/CertidaoNegativaPositivaPublica?PaginaAtual=1" target="_blank" rel="noreferrer">Certidão Criminal – Justiça Estadual</a></li>
                 <li><a href="https://projudi.tjgo.jus.br/" target="_blank" rel="noreferrer">PROJUDI</a></li>
             </ul>
+            <br />
+            <br />
         </section>
     );
 }

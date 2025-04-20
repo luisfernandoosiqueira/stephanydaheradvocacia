@@ -1,7 +1,5 @@
-// src/components/Navbar.js
 import React from "react";
 import "./Navbar.css";
-
 
 function Navbar({ menuOpen, setMenuOpen }) {
   return (
@@ -13,7 +11,13 @@ function Navbar({ menuOpen, setMenuOpen }) {
             <li><a href="#home">Home</a></li>
             <li><a href="#atuacao">Serviços</a></li>
             <li><a href="#sobre">Sobre</a></li>
+            
+            {/* Esses dois só aparecem no desktop */}
+            <li className="desktop-only"><a href="#feedback">Feedback</a></li>
+            <li className="desktop-only"><a href="#links">Links Úteis</a></li>
+          
             <li><a href="#contato">Contato</a></li>
+          
           </ul>
           <button
             className={`hamburger ${menuOpen ? "open" : ""}`}
