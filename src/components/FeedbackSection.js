@@ -14,11 +14,12 @@ function FeedbackSection() {
       </div>
       <p className="feedback-intro">
         Ouça o que os nossos clientes têm a dizer sobre o nosso trabalho.
-      </p>
+      </p><br />
       <div className="feedback-audios">
         <audio src={audio2} controls controlsList="nodownload">
           Seu navegador não suporta áudio.
         </audio>
+        <br />
         <audio src={audio1} controls controlsList="nodownload">
           Seu navegador não suporta áudio.
         </audio>
