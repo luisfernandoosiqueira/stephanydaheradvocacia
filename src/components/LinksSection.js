@@ -30,8 +30,8 @@ function LinksSection() {
                 <li><a href="https://projudi.tjgo.jus.br/CertidaoNegativaPositivaPublica?PaginaAtual=1" target="_blank" rel="noreferrer">Certidão Criminal – Justiça Estadual</a></li>
                 <li><a href="https://projudi.tjgo.jus.br/" target="_blank" rel="noreferrer">PROJUDI</a></li>
             </ul>
-            <br />
-            <br />
+            
+            
         </section>
     );
 }

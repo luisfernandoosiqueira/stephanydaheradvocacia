@@ -34,7 +34,7 @@ function FeedbackSection() {
         <audio src={audio1} controls controlsList="nodownload">
           Seu navegador não suporta áudio.
         </audio>
-        <br />
+        
       </div>
     </section>
   );

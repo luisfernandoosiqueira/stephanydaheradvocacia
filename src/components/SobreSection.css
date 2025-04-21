@@ -1,60 +1,117 @@
 .sobre-section {
-    display:flex; flex-wrap:wrap; justify-content:center;
-    max-width:1200px; margin:2rem auto; gap:2rem;
-    padding:0 1.5rem;
-  }
-  
-  .sobre-content {
-    flex:1 1 350px; min-width:300px;
-  }
-  
-  .sobre-img {
-    width:100%; 
-    border-radius:6px;
-    object-fit:cover; 
-    transition:transform .3s;
-  }
-  .sobre-img:hover { 
-    transform:scale(1.02); 
-  }
-  
-  .sobre-content h2 { 
-    font-size:2rem; 
-    margin-bottom:1rem; 
-    color:#2f2f2f; 
-  }
-  .sobre-content p {
-    margin-bottom:1rem; 
-    line-height:1.6; 
-    color:#555;
-    text-align:justify;
-  }
-  
-  .btn-instagram {
-    display:inline-flex; 
-    align-items:center;
-    background:#fff; 
-    padding:.4rem .67rem;
-    border-radius:12px; 
-    font-weight:600;
-    color: #003569; /* cor dos links/menções no Instagram */
-    text-decoration:none; 
-    transition:background .3s;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 0 1.5rem;
+}
 
-  .btn-instagram:hover {
-    background: linear-gradient(135deg, #800080, #ff00ff 50%, #ff4500);
+.sobre-content {
+  flex: 1 1 350px;
+  min-width: 300px;
+}
+
+/* CARROSSEL */
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* setas maiores */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/* desabilitar estilo quando no início/fim */
+.carousel-button:disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* texto */
+.sobre-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2f2f2f;
+}
+
+.sobre-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  padding: 0.4rem 0.67rem;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #003569;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-instagram:hover {
+  background: linear-gradient(135deg, #800080, #ff00ff 50%, #ff4500);
+}
+
+.icon-instagram {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+}
+
+/* mobile: mantém layout e swipe */
+@media (max-width: 768px) {
+  .sobre-instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .icon-instagram {
-    width:50px; 
-    height:50px; 
-    object-fit:contain;
-    margin-right:.5rem;
-  }
-  
-  /* mobile */
-  @media (max-width:768px) {
-    .sobre-instagram { display:flex; flex-direction:column; align-items:center; }
-  }
-  
+}

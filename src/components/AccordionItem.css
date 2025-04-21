@@ -45,8 +45,7 @@
     .accordion-arrow[data-status="closed"] {
       font-size: 1.65rem;/* aumenta a seta de fechado */
       display: inline-block; /* mantém a seta na mesma linha */
-      transform: scaleY(1.6);/* aumenta verticalmente a seta */
-      transform: scaleX(0.7); /* aumenta horizontalmente a seta */
+      transform: scaleX(0.65); /* aumenta horizontalmente a seta */
       position: relative; /* permite posicionar a seta verticalmente */
       top: 0.1em; /* ajusta verticalmente a seta para baixo */
     }
