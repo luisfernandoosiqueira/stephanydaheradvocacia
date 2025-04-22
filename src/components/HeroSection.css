@@ -75,3 +75,10 @@
     }
   }
   
+
+/* Adicione ao HeroSection.css */
+@media (min-width: 769px) {
+  .hero-content {
+    margin-top: 14rem; /* Ajusta o conteúdo para baixo na versão desktop */
+  }
+}
