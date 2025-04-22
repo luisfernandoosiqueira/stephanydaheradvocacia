@@ -14,6 +14,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
             
             {/* Esses dois só aparecem no desktop */}
             <li className="desktop-only"><a href="#feedback">Feedback</a></li>
+            <li className="desktop-only"><a href="#duvidas">Dúvidas Frequentes</a></li>
             <li className="desktop-only"><a href="#links">Links Úteis</a></li>
           
             <li><a href="#contato">Contato</a></li>
