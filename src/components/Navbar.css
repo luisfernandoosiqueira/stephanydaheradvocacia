@@ -8,7 +8,7 @@
 }
 
 .navbar-container {
-  max-width: 1200px;
+  max-width: 1475px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
@@ -171,3 +171,4 @@ nav {
     width: 200px;
   }
 }
+
