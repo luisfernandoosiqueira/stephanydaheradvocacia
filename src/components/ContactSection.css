@@ -68,8 +68,9 @@
   
   /* Imagem de localização */
   .localizacao-img {
-    width: 140px;
+    width: 400px;
     transition: transform 0.3s;
+    border-radius: 7px;
   }
   
   .localizacao-img:hover {
