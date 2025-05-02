@@ -15,7 +15,7 @@ function WhatsAppButton() {
 
   return (
     <a
-      href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Encontrei%20seu%20WhatsApp%20no%20site%20stephanydaheradvocacia.com.br%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20Pode%20me%20ajudar%3F"
+      href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Encontrei%20seu%20contato%20pelo%20site%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica."
       target="_blank"
       rel="noreferrer"
       className="whatsapp-fixo"
