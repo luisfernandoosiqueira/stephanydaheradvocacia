@@ -2,7 +2,7 @@
 import React from "react";
 import "./ContactSection.css";
 
-import imagemLocalizacao from "../images/localizacao.png";
+import imagemLocalizacao from "../images/localizacao2.png";
 import logoContato from "../images/logo.png";
 
 function ContactSection() {
@@ -48,7 +48,7 @@ function ContactSection() {
             </a>
           </p>
           <p className="localizacao-orientacao">
-            Clique na imagem acima para visualizar a localização.
+            Clique na imagem acima para abrir no Google Maps.
           </p>
         </div>
 
