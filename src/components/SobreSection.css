@@ -70,7 +70,28 @@
   pointer-events: none;
 }
 
-/* texto */
+/* PONTINHOS DO CARROSSEL */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #bb0000; /* cor do seu tema */
+}
+
+/* TEXTO */
 .sobre-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -114,4 +135,10 @@
     flex-direction: column;
     align-items: center;
   }
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
 }
+
+
