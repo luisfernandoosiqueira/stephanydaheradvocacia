@@ -35,7 +35,7 @@ function ContactSection() {
           {/* envolvimento em <p> para manter margem igual às outras linhas */}
           <p>
             <a
-              href="https://maps.app.goo.gl/RbWnPkRYwMPYsNaz9"
+              href="https://maps.app.goo.gl/msHC9KCZxXRMACg6A"
               target="_blank"
               rel="noreferrer"
               className="map-link"
