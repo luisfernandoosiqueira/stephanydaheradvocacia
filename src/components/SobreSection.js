@@ -118,7 +118,7 @@ function SobreSection() {
           <strong>OAB/GO 56880</strong> — Stephany Daher é advogada
           criminalista, formada em Direito pela PUC Goiás desde 2018. Iniciou
           sua trajetória no Tribunal Regional Eleitoral, em Aparecida de
-          Goiânia, onde atuou como estagiária e depois foi promovida ao cargo de assessor especial.
+          Goiânia, onde atuou como estagiária e, posteriormente, foi promovida ao cargo de assessora especial.
           <br />
           <br />
           Após ser aprovada em concurso público, trabalhou na Prefeitura de
