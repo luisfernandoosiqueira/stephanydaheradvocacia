@@ -6,6 +6,7 @@ import StephanySobre2 from "../images/sobre2.png";
 import StephanySobre3 from "../images/sobre3.png";
 import StephanySobre4 from "../images/sobre4.png";
 import StephanySobre5 from "../images/sobre5.png";
+import StephanySobre6 from "../images/sobre6.png";
 import iconeInstagram from "../images/instagram.png";
 
 const imagens = [
@@ -14,6 +15,7 @@ const imagens = [
   StephanySobre3,
   StephanySobre4,
   StephanySobre5,
+  StephanySobre6
   // adicione mais imagens aqui, sem alterar a lógica
 ];
 
@@ -115,8 +117,8 @@ function SobreSection() {
         <h2>Sobre a Advogada</h2>
         <br />
         <p>
-          <strong>OAB/GO 56880</strong> — Stephany Daher é advogada
-          criminalista, formada em Direito pela PUC Goiás desde 2018. Iniciou
+          <strong>OAB/GO 56880</strong> — Dra. Stephany Daher é advogada
+          criminal em Goiânia, formada em Direito pela PUC Goiás desde 2018. Iniciou
           sua trajetória no Tribunal Regional Eleitoral, em Aparecida de
           Goiânia, onde atuou como estagiária e, posteriormente, foi promovida ao cargo de assessora especial.
           <br />
