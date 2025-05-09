@@ -39,7 +39,7 @@ import AccordionItem from "./AccordionItem";
     answer: "É um instrumento jurídico previsto na Constituição Federal para proteger o direito de liberdade de quem se encontra preso ou ameaçado de prisão de forma ilegal.<br/>Pode ser utilizado em qualquer fase, inclusive antes do início formal de um processo.<br/>A apresentação adequada da ilegalidade e da urgência costuma ser determinante para a concessão da medida."
   },
   {
-    question: "Fui intimado para depor. Posso ir sozinho?",
+    question: "Fui intimado para depor na delegacia. Posso ir sozinho?",
     answer: "Sim, mas nem sempre é indicado.<br/>Saber se está sendo ouvido como testemunha ou investigado pode mudar completamente o que deve ou não ser dito.<br/>A preparação prévia costuma evitar problemas desnecessários."
   },
   {
