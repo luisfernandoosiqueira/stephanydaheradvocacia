@@ -1,11 +1,21 @@
 // src/components/ContactSection.js
-import React from "react";
+import React, { useCallback } from "react";
 import "./ContactSection.css";
 
 import imagemLocalizacao from "../images/localizacao2.png";
 import logoContato from "../images/logo.png";
+import WhatsappIcon from "../images/icone-whatsapp.png";
 
 function ContactSection() {
+  // Handler para disparar o evento de conversão
+  const handleWhatsAppClick = useCallback(() => {
+    if (window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17023064038/CfCQCITNu74aEOavnbU_"
+      });
+    }
+  }, []);
+
   return (
     <section id="contato" className="contato-section">
       <h2 data-anim="fade-down">Contato</h2>
@@ -14,11 +24,26 @@ function ContactSection() {
       <div className="contato-container">
         <div className="contato-info" data-anim="fade-left">
           <h3>Atendimento 24h</h3>
+          {/* Substituição do telefone por link do WhatsApp */}
           <p>
-            Telefone: <strong>(62) 99274-7813</strong>
+            <a
+              href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Encontrei%20seu%20WhatsApp%20no%20site%20stephanydaheradvocacia.com.br%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20Pode%20me%20ajudar%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-link"
+              onClick={handleWhatsAppClick}
+            >
+              <img
+                src={WhatsappIcon}
+                alt="WhatsApp"
+                className="icon-whatsapp-contact"
+              />
+              <strong>(62) 99274-7813</strong>
+            </a>
           </p>
+
           <p>
-            E‑mail:{" "}
+            E-mail:{" "}
             <strong>
               <span className="email-text">
                 stephanydaheradv@gmail.com

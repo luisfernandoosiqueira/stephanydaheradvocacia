@@ -40,16 +40,43 @@
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;               /* inclui borda no cálculo de tamanho */
-  border: 2px solid transparent;        /* borda invisível para evitar deslocamento */
+  box-sizing: border-box;              
+  border: 2.5px solid transparent;     /* borda fixa de 2.5px */
   transition: transform .3s, box-shadow .3s, border-color .3s;
 }
 
-.card-atuacao:hover {
-  transform: translateY(-5px);
-  /* Sombra mais intensa ao passar o mouse */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  border-color: #000;                   /* apenas altera a cor da borda */
+/* Hover (desktop) */
+@media (min-width: 769px) {
+  .card-atuacao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+    border-color: #000;                /* apenas cor da borda */
+  }
+}
+
+/* “In-view” (mobile) */
+@media (max-width: 768px) {
+  /* remove hover nativo no mobile */
+   .card-atuacao {
+    padding: 1rem 0.5rem; /* 1rem vertical, 0.5rem horizontal */
+  }
+  
+  .card-atuacao:hover {
+    transform: none;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .07);
+    border-color: transparent;
+  }
+
+  /* aplica efeito quando .in-view */
+  .card-atuacao.in-view {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+    border-color: #000;
+  }
+
+  .card-atuacao {
+    padding: 1rem;
+  }
 }
 
 .card-icon {
@@ -99,11 +126,3 @@
   font-weight: bold;
   color: #bb0000;
 }
-
-@media (max-width: 768px) {
-  .card-atuacao {
-    padding: 1rem;
-  }
-}
-
-

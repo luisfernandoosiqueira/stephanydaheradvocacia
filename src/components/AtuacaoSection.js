@@ -1,17 +1,17 @@
 // src/components/AtuacaoSection.js
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./AtuacaoSection.css";
 
 const cardsData = [
   {
     icon: "⚖️",
-   title: (
-    <>
-      Urgência Criminal<br/>
-      Atendimento Imediato<br/>
-      24h
-    </>
-  ),
+    title: (
+      <>
+        Urgência Criminal<br/>
+        Atendimento Imediato<br/>
+        24h
+      </>
+    ),
     question: "Está preso ou recebeu voz de prisão?",
     tagline:
       "Atuação rápida e estratégica desde o primeiro contato com a autoridade policial.",
@@ -39,14 +39,14 @@ const cardsData = [
   },
   {
     icon: "📂",
-       title: (
-    <>
-      Defesa Técnica no<br/>
-      Processo Penal
-    </>
-  ),
-/*     question: "Responda ao processo com estratégia e segurança jurídica.",
- */    tagline: "Atuação estratégica em todas as fases: da defesa inicial aos tribunais superiores.",
+    title: (
+      <>
+        Defesa Técnica no<br/>
+        Processo Penal
+      </>
+    ),
+    tagline:
+      "Atuação estratégica em todas as fases: da defesa inicial aos tribunais superiores.",
     items: [
       "Defesa Preliminar e Resposta à Acusação",
       "Propostas de Acordo de Não Persecução Penal (ANPP)",
@@ -61,12 +61,12 @@ const cardsData = [
   },
   {
     icon: "⚔️",
-       title: (
-    <>
-      Defesa Criminal<br/>
-      Áreas de Atuação
-    </>
-  ),
+    title: (
+      <>
+        Defesa Criminal<br/>
+        Áreas de Atuação
+      </>
+    ),
     question: "Processado ou acusado?",
     tagline:
       "Defesa estratégica em crimes graves e complexos, com sigilo e dedicação total.",
@@ -85,12 +85,12 @@ const cardsData = [
   },
   {
     icon: "🔓",
-       title: (
-    <>
-      Execução Penal<br/>
-      Garantias de Direitos
-    </>
-  ),
+    title: (
+      <>
+        Execução Penal<br/>
+        Garantias de Direitos
+      </>
+    ),
     question: "Seu direito à liberdade começa na execução penal.",
     tagline:
       "Atuação focada na redução de pena e no cumprimento humanizado.",
@@ -104,12 +104,12 @@ const cardsData = [
   },
   {
     icon: "🧑‍⚖️",
-       title: (
-    <>
-      Juizado Especial <br/>
-      Criminal - JECRIM
-    </>
-  ),
+    title: (
+      <>
+        Juizado Especial <br/>
+        Criminal – JECRIM
+      </>
+    ),
     question:
       "Infrações de menor potencial ofensivo também exigem defesa especializada.",
     tagline: "",
@@ -124,6 +124,28 @@ const cardsData = [
 ];
 
 function AtuacaoSection() {
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    if (!("IntersectionObserver" in window)) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio >= 0.6) {
+            entry.target.classList.add("in-view");
+          } else {
+            entry.target.classList.remove("in-view");
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    cardsRef.current.forEach((el) => el && observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="atuacao" className="atuacao-section">
       <div className="section-header">
@@ -137,15 +159,12 @@ function AtuacaoSection() {
             className="card-atuacao"
             data-anim="fade-up"
             data-delay={`${i * 0.1}s`}
+            ref={(el) => (cardsRef.current[i] = el)}
           >
             <div className="card-icon">{card.icon}</div>
             <h3>{card.title}</h3>
-            {card.question && (
-              <p className="card-question">{card.question}</p>
-            )}
-            {card.tagline && (
-              <p className="card-tagline">{card.tagline}</p>
-            )}
+            {card.question && <p className="card-question">{card.question}</p>}
+            {card.tagline && <p className="card-tagline">{card.tagline}</p>}
             <ul>
               {card.items.map((item, idx) => (
                 <li key={idx}>{item}</li>
@@ -159,5 +178,3 @@ function AtuacaoSection() {
 }
 
 export default AtuacaoSection;
-
-
