@@ -2,52 +2,88 @@
 .faq-section {
     padding: 2rem;
     background-color: #fdfdfd;
-  }
-  
-  .accordion {
+}
+
+.accordion {
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  .accordion-item {
+}
+
+.accordion-item {
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
-  }
-  
-  .accordion-question {
+}
+
+/* --- Pergunta: seta à esquerda e alinhada ao topo do texto --- */
+.accordion-question {
+    display: flex;             /* seta e texto no mesmo eixo */
+    align-items: flex-start;   /* ambos alinhados ao topo */
     width: 100%;
     background: none;
     border: none;
     text-align: left;
     font-size: 1.1rem;
     font-weight: 600;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0;       /* só padding-top, remove padding-bottom */
     cursor: pointer;
     color: #333;
-  }
-  
-  .accordion-answer {
-    padding: 1rem 0;
+
+    /* força auto-dimensionamento em vez de altura fixa */
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+/* Indicador de seta */
+.accordion-arrow {
+    order: -1;                 /* seta antes do texto */
+    margin-right: 0.5rem;      /* espaçamento entre seta e texto */
+    display: inline-block;
+    transition: transform 0.2s ease;
+    color: #bb0000;
+}
+
+/* Gera o glyph da seta */
+.accordion-arrow::before {
+    content: '►';
+    display: inline-block;
+}
+
+/* Estado aberto: gira 90° no sentido horário */
+.accordion-question[aria-expanded="true"] .accordion-arrow::before {
+    transform: rotate(90deg);
+}
+
+/* Resposta */
+.accordion-answer {
+    margin-top: 0.5rem;        /* espaço fixo até o início da resposta */
+    padding: 0 0 1rem;         /* sem padding-top, mantém padding-bottom */
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
-    text-align: justify; /* Adiciona justificação ao texto das respostas */
-  }
-  
-  /* Indicador de seta */
-  .accordion-arrow {
-    margin-right: 0.5rem;
-    font-weight: bold;
-  }
-  
-  /* Ajuste na versão mobile apenas para a seta fechada */
-  @media (max-width: 768px) {
-    .accordion-arrow[data-status="closed"] {
-      font-size: 1.65rem;/* aumenta a seta de fechado */
-      display: inline-block; /* mantém a seta na mesma linha */
-      transform: scaleX(0.65); /* aumenta horizontalmente a seta */
-      position: relative; /* permite posicionar a seta verticalmente */
-      top: 0.1em; /* ajusta verticalmente a seta para baixo */
+    text-align: justify;
+}
+
+/* ===== Versão mobile ===== */
+@media (max-width: 768px) {
+    /* aumenta o tamanho do span inteiro (e do ::before) */
+    .accordion-arrow {
+        font-size: 1.85rem;      
+        display: inline-block;    
+        position: relative;       
+        bottom: 0.34em;           /* desce a seta em mobile */
     }
-  }
-  
+
+    /* compressão horizontal em ambos os estados */
+    .accordion-arrow::before {
+        transform-origin: center center;
+        transform: scaleX(0.6);
+        transition: transform 0.2s ease;
+    }
+
+    /* quando aberto, gira + mantém escala */
+    .accordion-question[aria-expanded="true"] .accordion-arrow::before {
+        transform: rotate(90deg) scaleX(0.6);
+    }
+}
+
+

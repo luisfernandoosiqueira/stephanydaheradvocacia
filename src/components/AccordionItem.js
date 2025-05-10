@@ -2,25 +2,20 @@
 import React, { useState } from "react";
 import "./AccordionItem.css";
 
-
 function AccordionItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
-  const arrowIcon = isOpen ? "▼" : "►";
 
   return (
     <div className="accordion-item" data-anim="fade-up">
       <button
         className="accordion-question"
+        aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span
-          className="accordion-arrow"
-          data-status={isOpen ? "open" : "closed"}
-        >
-          {arrowIcon}
-        </span>
-        {question}
+        <span className="accordion-text">{question}</span>
+        <span className="accordion-arrow" />
       </button>
+
       {isOpen && (
         <div
           className="accordion-answer"
