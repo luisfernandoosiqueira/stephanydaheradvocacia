@@ -94,10 +94,11 @@
   .chamada-title {
     font-size: 1.4rem;
     margin-bottom: 23rem;
-    margin-top: -2.5rem;
+    margin-top: -3.25rem;
   }
   .chamada-subtitle {
     font-size: 1.05rem;
+    margin-bottom: 0.7rem;
   }
   .btn-hero,
   .btn-whatsapp {
@@ -121,5 +122,10 @@
     font-size: 1.25rem;
   }
 
+    .chamada-title {
+
+    margin-top: -4.5rem;
+    margin-bottom: 25rem;
+  }
   
 } 

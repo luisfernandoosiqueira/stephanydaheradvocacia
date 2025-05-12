@@ -18,9 +18,9 @@ function ChamadaSection() {
     <section id="chamada" className="chamada-section">
       <div className="chamada-overlay" />
       <div className="chamada-content" data-anim="fade-up">
-        <h2 className="chamada-title">Não espere o pior. <br /> <br /> Sua liberdade deve ser levada a sério</h2>
+        <h2 className="chamada-title">Não espere o pior <br /> <br /> Sua liberdade deve ser levada a sério</h2>
         <h1 className="chamada-subtitle">
-          Conte com um advogado experiente para defendê-la.<br />
+          Conte com um advogado experiente<br />
 
         </h1>
         <a
@@ -35,7 +35,7 @@ function ChamadaSection() {
             alt="WhatsApp"
             className="icon-whatsapp"
           />
-          Falar com a Dra Stephany Daher
+          Falar com a Dra. Stephany Daher
         </a>
       </div>
     </section>
