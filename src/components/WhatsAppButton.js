@@ -15,8 +15,7 @@ function WhatsAppButton() {
 
   return (
     <a
-      href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Encontrei%20seu%20contato%20pelo%20site%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica."
-      target="_blank"
+href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20a%20advogada%20Stephany%20Daher."      target="_blank"
       rel="noreferrer"
       className="whatsapp-fixo"
       onClick={handleClick}

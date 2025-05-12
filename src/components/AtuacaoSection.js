@@ -32,6 +32,7 @@ const cardsData = [
       "Não vá sozinho. Conte com a orientação de um advogado criminalista experiente.",
     items: [
       "Intimações para Depoimento",
+      "Acompanhamento em Delegacia",
       "Acompanhamento de Depoimentos",
       "Acompanhamento de Interrogatório Policial",
       "Acompanhamento de Inquérito Policial",

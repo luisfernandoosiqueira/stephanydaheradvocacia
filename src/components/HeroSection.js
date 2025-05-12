@@ -26,8 +26,7 @@ function HeroSection() {
         </h1>
         <a
           className="btn-hero btn-whatsapp"
-          href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Encontrei%20seu%20WhatsApp%20no%20site%20stephanydaheradvocacia.com.br%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20Pode%20me%20ajudar%3F"
-          target="_blank"
+href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Preciso%20falar%20com%20um%20advogado%20criminalista."          target="_blank"
           rel="noopener noreferrer"
           onClick={handleWhatsAppClick}
         >

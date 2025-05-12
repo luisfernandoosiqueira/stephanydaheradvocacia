@@ -11,6 +11,7 @@ function Footer() {
     "Advogado Criminal Senador Canedo",
     "Advogado Criminal Trindade",
     "Advogado Criminalista Goiânia",
+    "Advogado para Execução Penal",
     "Prisão em Flagrante",
     "Preso em Flagrante",
     "Acompanhamento em Delegacia",
@@ -20,8 +21,14 @@ function Footer() {
     "Advogado Criminalista",
     "Advogado Criminal Urgente",
     "Advogado Criminal 24h",
-    "Advogado Criminalista Urgente"
-  ];
+    "Advogado Criminalista Urgente",
+    "Advogado Flagrante",
+    "Advogado Habeas Corpus",
+    "Advogado Audiência de Custódia",
+    "Advogado para Execução Criminal",
+    "Advogado para Crime de Estelionato",
+    "Advogado para Crimes Cibernéticos"
+   ];
 
   // Duplica os termos para scroll contínuo sem gap
   const termosDuplicados = [...termos, ...termos];

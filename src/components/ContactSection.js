@@ -27,7 +27,7 @@ function ContactSection() {
           {/* Substituição do telefone por link do WhatsApp */}
           <p>
             <a
-              href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Encontrei%20seu%20WhatsApp%20no%20site%20stephanydaheradvocacia.com.br%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20Pode%20me%20ajudar%3F"
+              href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Preciso%20conversar%20com%20um%20advogado%20criminalista%20e%20encontrei%20seu%20contato."
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-link"
