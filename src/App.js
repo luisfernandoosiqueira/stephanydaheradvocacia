@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import ChamadaSection from "./components/ChamadaSection";
 import AtuacaoSection from "./components/AtuacaoSection";
 import SobreSection from "./components/SobreSection";
 import FeedbackSection from "./components/FeedbackSection";
@@ -23,6 +24,7 @@ function App() {
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <HeroSection />
       <AtuacaoSection />
+      <ChamadaSection />
       <SobreSection sobreImg={sobreImg} setSobreImg={setSobreImg} />
       <FeedbackSection />
       <FAQSection />

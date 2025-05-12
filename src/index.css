@@ -4,6 +4,8 @@
 :root {
   --hero-desktop: url('./images/home3.png');
   --hero-mobile: url('./images/home2.png');
+  --chamada-desktop: url('./images/chamada.png');
+  --chamada-mobile: url('./images/chamada2.png');
 }
 
 /* Reset + configurações básicas */

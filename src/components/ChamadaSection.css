@@ -1,0 +1,125 @@
+ /* src/components/ChamadaSection.css */
+
+/* Ajuste para empurrar todo o conteúdo para o topo */
+.chamada-section {
+  position: relative;
+  height: 100vh;
+  background-image: var(--chamada-desktop);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-start;     /* mudou de center para flex-start */
+  justify-content: center;
+  padding-top: 5rem;            /* ajuste esse valor até encontrar o ponto ideal */
+  overflow: hidden;
+}
+
+.chamada-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.chamada-content {
+  position: relative;
+  max-width: 700px;
+  color: #fff;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.chamada-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f2f2f2;
+  margin-bottom: 30rem;
+}
+
+.chamada-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+/* Botão padrão */
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
+  padding: .8rem 1.5rem;
+  background-color: #bb0000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color .4s ease, transform .3s ease;
+  text-decoration: none;
+}
+
+.btn-hero:hover {
+  background-color: #8c0000;
+  transform: scale(1.05);
+}
+
+/* Override para o botão WhatsApp */
+.btn-whatsapp {
+  background-color: #1ebe57;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1AA24A;
+  transform: scale(1.1);
+}
+
+/* Ícone dentro do botão */
+.icon-whatsapp {
+  width: 1.5rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .chamada-section {
+    background-image: var(--chamada-mobile);
+    background-attachment: scroll;
+  }
+  .chamada-title {
+    font-size: 1.4rem;
+    margin-bottom: 24rem;
+    margin-top: -2rem;
+  }
+  .chamada-subtitle {
+    font-size: 1.05rem;
+  }
+  .btn-hero,
+  .btn-whatsapp {
+    white-space: nowrap;
+    font-size: 1rem;
+    padding: 1.2rem 1rem;
+  }
+  .icon-whatsapp {
+    width: 1.2rem;
+    margin-right: 0.25rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .chamada-content {
+    margin-top: 2rem; /* Mesma lógica do HeroSection */
+  }
+  .btn-whatsapp {
+    padding: 1.25rem 2rem;
+    font-size: 1.25rem;
+  }
+
+  
+} 

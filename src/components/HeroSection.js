@@ -21,12 +21,12 @@ function HeroSection() {
       <div className="hero-content" data-anim="fade-up">
         <h2 className="hero-title">Advocacia Criminal</h2>
         <h1 className="hero-subtitle">
-          Precisa de um <strong>Advogado Criminal</strong>? <br/>
+          Precisa de um <strong>Advogado Criminal</strong>? <br />
           Plantão 24 horas - Goiânia e Região
         </h1>
         <a
           className="btn-hero btn-whatsapp"
-href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Preciso%20falar%20com%20um%20advogado%20criminalista."          target="_blank"
+          href="https://wa.me/5562992747813?text=Ol%C3%A1%21%20Preciso%20falar%20com%20um%20advogado%20criminalista." target="_blank"
           rel="noopener noreferrer"
           onClick={handleWhatsAppClick}
         >
