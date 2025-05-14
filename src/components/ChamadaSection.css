@@ -129,3 +129,20 @@
   }
   
 } 
+
+/* NOTEBOOK ~15.6” */
+@media (min-width: 1024px) and (max-width: 1600px) and (orientation: landscape) {
+.chamada-section {
+      background-image: var(--chamada-desktop);
+
+    background-attachment: scroll;
+  }
+  .chamada-title {
+    font-size: 1.8rem;
+    margin-bottom: 18rem;
+    margin-top: -3rem;
+  }
+  .chamada-subtitle {
+    font-size: 1.05rem;
+  }
+}
